@@ -1,30 +1,41 @@
 @use 'reset' as *
 main
+  color: white
+  background: #021b3c
   display: flex
   justify-content: space-between
+  align-items: center
+  gap: 2em
   padding: 2em
   width: 100vw
   height: 100vh
 // board
 .board
-  width: 75%
+  background: #022c64
+  border: 1px solid rgba(0, 0, 0, .6)
+  border-radius: 1rem
+  width: 60%
+  height: 100%
   padding: 1em
-  background: #666
   > div
     height: 100%
     display: grid
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: repeat(3, 1fr)
     gap: 1em
-    button
-      width: 100%
-      height: 100%
-      border: 0
-      border-radius: 50%
-      font-size: 5rem
+  .drum-pad
+    background: #212020
+    width: 100%
+    height: 100%
+    border: 0
+    border-radius: 50%
+    font-size: 5rem
+    &.active
+      background: #021b3c
 // options
 .options
-  background: #333
+  max-width: 25%
+  background: #022450
   flex: 1
 #display
   width: 100%
@@ -32,4 +43,3 @@ main
   display: flex
   align-items: center
   justify-content: center
-  background: white

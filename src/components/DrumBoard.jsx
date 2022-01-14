@@ -1,14 +1,9 @@
 import DrumPad from './DrumPad'
-import bankStore from '../sounds'
+import bankStore from '../data'
 const DrumBoard = ({ bank, handler }) => {
   const makePads = bankStore[bank].map(pad => {
     return (
-      <DrumPad
-        key={pad.key}
-        bank={bank}
-        pad={pad}
-        handler={handler}
-      />
+      <DrumPad key={pad.key} pad={pad} handler={handler} />
     )
   })
   return <div>{makePads}</div>
