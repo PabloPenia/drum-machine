@@ -4,7 +4,7 @@ import Display from './Display'
 import DrumBoard from './DrumBoard'
 
 const App = () => {
-  const [bank, setBank] = useState(0)
+  const [bank, setBank] = useState('0')
   const [display, setDisplay] = useState('Waiting...')
   const handleBank = e => setBank(e.target.value)
   const handleDisplay = padName => setDisplay(padName)
