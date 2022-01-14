@@ -4,15 +4,15 @@ const BankSwitcher = ({ bank, handler }) => {
       <legend>Choose a bank</legend>
       <input
         type="radio"
-        value={0}
-        checked={bank === 0}
+        value="0"
+        checked={bank === '0'}
         onChange={handler}
       />{' '}
       1
       <input
         type="radio"
-        value={1}
-        checked={bank === 1}
+        value="1"
+        checked={bank === '1'}
         onChange={handler}
       />{' '}
       2
