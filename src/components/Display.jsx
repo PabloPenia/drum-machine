@@ -1,8 +1,8 @@
 const Display = ({ text }) => {
   return (
-    <div id="display">
+    <section id="display">
       <p>{text}</p>
-    </div>
+    </section>
   )
 }
 
